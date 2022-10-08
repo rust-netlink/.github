@@ -36,6 +36,8 @@ This project aims at providing building blocks for [netlink][man-netlink] (see
 - The [`mptcp-pm`][mptcp-pm] crate provides MPTCP path manager netlink protocol
 - The [`wl-nl80211`][wl-nl80211] crate provides wireless nl80211 netlink
   protocol
+- If you want to add more netlink related crates into this organization, please
+  open pull request to [rust-netlink/new-crate-review][new-crate-review].
 
 
 ## Altnernatives
@@ -96,3 +98,4 @@ are building, and the support they provide.
 [ethtool]: https://github.com/rust-netlink/ethtool
 [mptcp-pm]: https://github.com/rust-netlink/mptcp-pm
 [wl-nl80211]: https://github.com/rust-netlink/wl-nl80211
+[new-crate-review]: https://github.com/rust-netlink/new-crate-review
