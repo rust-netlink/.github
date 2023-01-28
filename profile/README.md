@@ -19,6 +19,7 @@ This project aims at providing building blocks for [netlink][man-netlink] (see
       the [generic netlink][man-genl] protocol
     - [`netlink-packet-netfilter`][netlink-packet-netfilter] provides message
       for the `NETLINK_NETFILTER` protocol
+    - [`netlink-packet-xfrm`][netlink-packet-xfrm] provides message for IPsec
 - The [`netlink-packet-core`][netlink-packet-core] is the glue for all the
   other `netlink-packet-*` crates. It provides a `NetlinkMessage<T>` type that
   represent any netlink message for any sub-protocol.
@@ -99,3 +100,4 @@ are building, and the support they provide.
 [mptcp-pm]: https://github.com/rust-netlink/mptcp-pm
 [wl-nl80211]: https://github.com/rust-netlink/wl-nl80211
 [new-crate-review]: https://github.com/rust-netlink/new-crate-review
+[netlink-packet-xfrm]: https://github.com/rust-netlink/netlink-packet-xfrm
