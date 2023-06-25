@@ -34,6 +34,8 @@ This project aims at providing building blocks for [netlink][man-netlink] (see
   [generic netlink protocol][man-genl]
 - The [`ethtool`][ethtool] crate provides higher level abstraction for
   [ethtool netlink protocol][ethtool-kernel-doc]
+- The [`netlink-packet-wireguard`][netlink-packet-wireguard] crate provide
+  netlink message for wireguard.
 - The [`mptcp-pm`][mptcp-pm] crate provides MPTCP path manager netlink protocol
 - The [`wl-nl80211`][wl-nl80211] crate provides wireless nl80211 netlink
   protocol
@@ -101,3 +103,4 @@ are building, and the support they provide.
 [wl-nl80211]: https://github.com/rust-netlink/wl-nl80211
 [new-crate-review]: https://github.com/rust-netlink/new-crate-review
 [netlink-packet-xfrm]: https://github.com/rust-netlink/netlink-packet-xfrm
+[netlink-packet-wireguard]: https://github.com/rust-netlink/netlink-packet-wireguard
