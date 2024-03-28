@@ -54,6 +54,11 @@ This project aims at providing building blocks for [netlink][man-netlink] (see
   - https://github.com/carrotsrc/rsnl
   - https://github.com/TaborKelly/nl-utils
 
+## Architecture Decision Records
+
+The architecture desion records are stored in
+https://github.com/rust-netlink/.github/tree/main/architecture_decisions
+
 ## Credits
 
 My main resource so far has been the source code of [`pyroute2`][pyroute2]
