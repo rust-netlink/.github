@@ -3,12 +3,25 @@
 This project aims at providing building blocks for [netlink][man-netlink] (see
 `man 7 netlink`).
 
-## Organization
+If you seeking crates to communication with linux netlink, please try:
+- The [`rtnetlink`][rtnetlink] crate provides higher level abstraction for the
+  [route protocol][man-rtnetlink]
+- The [`audit`][audit] crate provides higher level abstractions for the audit
+  protocol.
+- The [`genetlink`][genetlink] crate provides higher level abstraction for the
+  [generic netlink protocol][man-genl]
+- The [`ethtool`][ethtool] crate provides higher level abstraction for
+  [ethtool netlink protocol][ethtool-kernel-doc]
+- The [`mptcp-pm`][mptcp-pm] crate provides MPTCP path manager netlink protocol
+- The [`wl-nl80211`][wl-nl80211] crate provides wireless nl80211 netlink
+  protocol
 
-- The [`netlink_sys`][netlink-sys] crate provides netlink sockets. Integration
-  with [`mio`][mio] and [`tokio`][tokio] is optional.
+If you seeking crates to parsing or emitting netlink packet, please try:
+
 - Each netlink protocol has a `netlink-packet-<protocol_name>` crate that
   provides the packets for this protocol:
+    - The [`netlink-packet-wireguard`][netlink-packet-wireguard] crate provide
+      netlink message for wireguard.
     - [`netlink-packet-route`][netlink-packet-route] provides messages for the
       [route protocol][man-rtnetlink]
     - [`netlink-packet-audit`][netlink-packet-audit] provides messages for the
@@ -20,28 +33,19 @@ This project aims at providing building blocks for [netlink][man-netlink] (see
     - [`netlink-packet-netfilter`][netlink-packet-netfilter] provides message
       for the `NETLINK_NETFILTER` protocol
     - [`netlink-packet-xfrm`][netlink-packet-xfrm] provides message for IPsec
+
+Shared crates but designed for internal usage:
+- The [`netlink_sys`][netlink-sys] crate provides netlink sockets. Integration
+  with [`mio`][mio] and [`tokio`][tokio] is optional.
 - The [`netlink-packet-core`][netlink-packet-core] is the glue for all the
   other `netlink-packet-*` crates. It provides a `NetlinkMessage<T>` type that
   represent any netlink message for any sub-protocol.
 - The [`netlink-proto`][netlink-proto] crate is an asynchronous implementation
   of the netlink protocol. It only depends on `netlink-packet-core` for the
   `NetlinkMessage` type and `netlink-sys` for the socket.
-- The [`rtnetlink`][rtnetlink] crate provides higher level abstraction for the
-  [route protocol][man-rtnetlink]
-- The [`audit`][audit] crate provides higher level abstractions for the audit
-  protocol.
-- The [`genetlink`][genetlink] crate provides higher level abstraction for the
-  [generic netlink protocol][man-genl]
-- The [`ethtool`][ethtool] crate provides higher level abstraction for
-  [ethtool netlink protocol][ethtool-kernel-doc]
-- The [`netlink-packet-wireguard`][netlink-packet-wireguard] crate provide
-  netlink message for wireguard.
-- The [`mptcp-pm`][mptcp-pm] crate provides MPTCP path manager netlink protocol
-- The [`wl-nl80211`][wl-nl80211] crate provides wireless nl80211 netlink
-  protocol
-- If you want to add more netlink related crates into this organization, please
-  open pull request to [rust-netlink/new-crate-review][new-crate-review].
 
+If you want to add more netlink related crates into this organization, please
+open pull request to [rust-netlink/new-crate-review][new-crate-review].
 
 ## Altnernatives
 
