@@ -80,6 +80,11 @@ although I've only really used the concepts described in the first blog post).
 Thanks also to the people behind [tokio](tokio.rs) for the amazing tool they
 are building, and the support they provide.
 
+## Contact
+
+ * Crate github issue
+ * Use Matrix room: [`#rust-netlink:fedora.im`][matrix_room_url]
+
 [man-netlink]: https://www.man7.org/linux/man-pages/man7/netlink.7.html
 [man-audit]: https://man7.org/linux/man-pages/man3/audit_open.3.html
 [man-sock-diag]: https://www.man7.org/linux/man-pages/man7/sock_diag.7.html
@@ -113,3 +118,4 @@ are building, and the support they provide.
 [new-crate-review]: https://github.com/rust-netlink/new-crate-review
 [netlink-packet-xfrm]: https://github.com/rust-netlink/netlink-packet-xfrm
 [netlink-packet-wireguard]: https://github.com/rust-netlink/netlink-packet-wireguard
+[matrix_room_url]: https://app.element.io/#/room/#rust-netlink:fedora.im
