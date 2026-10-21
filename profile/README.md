@@ -16,6 +16,9 @@ If you seeking crates to communication with linux netlink, please try:
 - The [`wl-nl80211`][wl-nl80211] crate provides wireless nl80211 netlink
   protocol
 - The [`nl-wireguard`][nl-wireguard] crate provides wireguard netlink protocol
+- The [`nl-fou`][nl-fou] crate provides FOU (foo over UDP) netlink protocol
+- The [`nl-l2tp`][nl-l2tp] crate provides L2TP netlink protocol
+- The [`nl-macsec`][nl-macsec] crate provides MACsec netlink protocol
 
 If you seeking crates to parsing or emitting netlink packet, please try:
 
@@ -34,6 +37,12 @@ If you seeking crates to parsing or emitting netlink packet, please try:
     - [`netlink-packet-netfilter`][netlink-packet-netfilter] provides message
       for the `NETLINK_NETFILTER` protocol
     - [`netlink-packet-xfrm`][netlink-packet-xfrm] provides message for IPsec
+    - [`netlink-packet-fou`][netlink-packet-fou] provides messages for the FOU
+      (foo over UDP) generic netlink protocol
+    - [`netlink-packet-l2tp`][netlink-packet-l2tp] provides messages for the
+      L2TP generic netlink protocol
+    - [`netlink-packet-macsec`][netlink-packet-macsec] provides messages for
+      the MACsec generic netlink protocol
 
 We are also experimenting a do drop-in replacement of
 [iproute2][iproute_url] in [iproute-rs][iproute_rs_url].
@@ -127,5 +136,11 @@ are building, and the support they provide.
 [netlink-packet-wireguard]: https://github.com/rust-netlink/netlink-packet-wireguard
 [matrix_room_url]: https://app.element.io/#/room/#rust-netlink:fedora.im
 [nl-wireguard]: https://github.com/rust-netlink/nl-wireguard
+[nl-fou]: https://github.com/rust-netlink/nl-fou
+[nl-l2tp]: https://github.com/rust-netlink/nl-l2tp
+[nl-macsec]: https://github.com/rust-netlink/nl-macsec
+[netlink-packet-fou]: https://github.com/rust-netlink/netlink-packet-fou
+[netlink-packet-l2tp]: https://github.com/rust-netlink/netlink-packet-l2tp
+[netlink-packet-macsec]: https://github.com/rust-netlink/netlink-packet-macsec
 [iproute_url]: https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 [iproute_rs_url]: https://github.com/rust-netlink/iproute-rs
